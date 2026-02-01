@@ -5,6 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "cmake",
+            "request": "launch",
+            "name": "CMake: Configure project",
+            "cmakeDebugType": "configure",
+            "clean": false,
+            "configureAll": false
+        },
+        {
+            "type": "lldb-dap",
+            "request": "launch",
+            "name": "Launch",
+            "program": "${workspaceFolder}/<your program>",
+            "args": [],
+            "env": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
             "name": "Launch",
             "type": "lldb",
             "request": "launch",
